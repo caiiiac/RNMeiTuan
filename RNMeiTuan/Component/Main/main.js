@@ -33,7 +33,9 @@ export default class Main extends Component {
                     renderIcon={() => <Image source={{uri: 'tabbar_homepage'}} style={styles.iconStyle} />}
                     renderSelectedIcon = { () => <Image source={{ uri: 'tabbar_homepage_selected'}} style={styles.iconStyle} />}
                     selected={ this.state.selectedTab === 'home'}
+                    selectedTitleStyle={ styles.selectedTitleStyle }
                     onPress={() => this.setState({ selectedTab: 'home'})}
+
 
                 >
                     <Home/>
@@ -44,6 +46,7 @@ export default class Main extends Component {
                     renderIcon={() => <Image source={{uri: 'tabbar_merchant'}} style={styles.iconStyle} />}
                     renderSelectedIcon = { () => <Image source={{ uri: 'tabbar_merchant_selected'}} style={styles.iconStyle} />}
                     selected={ this.state.selectedTab === 'merchant'}
+                    selectedTitleStyle={ styles.selectedTitleStyle }
                     onPress={() => this.setState({ selectedTab: 'merchant'})}
                 >
                     <Merchant/>
@@ -54,6 +57,7 @@ export default class Main extends Component {
                     renderIcon={() => <Image source={{uri: 'tabbar_mine'}} style={styles.iconStyle} />}
                     renderSelectedIcon = { () => <Image source={{ uri: 'tabbar_mine_selected'}} style={styles.iconStyle} />}
                     selected={ this.state.selectedTab === 'mine'}
+                    selectedTitleStyle={ styles.selectedTitleStyle }
                     onPress={() => this.setState({ selectedTab: 'mine'})}
                 >
                     <Mine/>
@@ -79,6 +83,9 @@ const styles = StyleSheet.create({
     iconStyle: {
         width: Platform.OS === 'ios' ? 30 : 25,
         height: Platform.OS === 'ios' ? 30 : 25,
+    },
+    selectedTitleStyle: {
+        color: '#52BEAE'
     },
 
 });

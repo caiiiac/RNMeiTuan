@@ -4,17 +4,17 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react'
 import {
   AppRegistry,
-} from 'react-native';
+} from 'react-native'
 
-import Main from './Component/Main/main';
+import RootScene from './src/RootScene'
 
-export default class RNMeiTuan extends Component {
+export default class RNMeiTuan extends PureComponent {
   render() {
     return (
-        <Main/>
+        <RootScene />
     );
   }
 }

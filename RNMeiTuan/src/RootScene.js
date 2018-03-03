@@ -70,8 +70,8 @@ const Tab = TabNavigator(
                     <TabBarItem
                         tintColor={tintColor}
                         focused={focused}
-                        normalImage={require('./img/tabbar/pfb_tabbar_homepage@2x.png')}
-                        selectedImage={require('./img/tabbar/pfb_tabbar_homepage_selected@2x.png')}
+                        normalImage={{uri: 'pfb_tabbar_homepage'}}
+                        selectedImage={{uri: 'pfb_tabbar_homepage_selected'}}
                     />
                 )
             }),
@@ -85,8 +85,8 @@ const Tab = TabNavigator(
                     <TabBarItem
                         tintColor={tintColor}
                         focused={focused}
-                        normalImage={require('./img/tabbar/pfb_tabbar_merchant@2x.png')}
-                        selectedImage={require('./img/tabbar/pfb_tabbar_merchant_selected@2x.png')}
+                        normalImage={{uri: 'pfb_tabbar_merchant'}}
+                        selectedImage={{uri: 'pfb_tabbar_merchant_selected'}}
                     />
                 )
             }),
@@ -100,8 +100,8 @@ const Tab = TabNavigator(
                     <TabBarItem
                         tintColor={tintColor}
                         focused={focused}
-                        normalImage={require('./img/tabbar/pfb_tabbar_order@2x.png')}
-                        selectedImage={require('./img/tabbar/pfb_tabbar_order_selected@2x.png')}
+                        normalImage={{uri: 'pfb_tabbar_order'}}
+                        selectedImage={{uri: 'pfb_tabbar_order_selected'}}
                     />
                 )
             }),
@@ -115,8 +115,8 @@ const Tab = TabNavigator(
                     <TabBarItem
                         tintColor={tintColor}
                         focused={focused}
-                        normalImage={require('./img/tabbar/pfb_tabbar_mine@2x.png')}
-                        selectedImage={require('./img/tabbar/pfb_tabbar_mine_selected@2x.png')}
+                        normalImage={{uri: 'pfb_tabbar_mine'}}
+                        selectedImage={{uri: 'pfb_tabbar_mine_selected'}}
                     />
                 )
             }),
